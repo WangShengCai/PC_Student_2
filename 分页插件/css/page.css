@@ -1,0 +1,36 @@
+.cubs{
+    margin:15px auto 0;
+    float:right;
+}
+.cubs .my-page li{
+    list-style:none;
+    padding:2px 10px;
+    border: 1px solid #999;
+    color:#428bca;
+    border-radius:2px;
+    display:inline-block;
+    margin:0 2px;
+    cursor:pointer;
+}
+.cubs .my-page li:hover{
+    box-shadow:0 0 2px #999;
+}
+.cubs .my-page li.active{
+    background-color:#428bca;;
+    color:#fff;
+}
+.cubs .my-page span{
+    color:gray;
+    font-size:13px;
+}
+.cubs .my-page,.cubs .page-size{
+    display:inline-block;
+}
+.cubs .page-size{
+    margin-right:5px;
+}
+.cubs .page-size .size{
+    outline:none;
+    width:35px;
+    padding:4px 1px;
+}

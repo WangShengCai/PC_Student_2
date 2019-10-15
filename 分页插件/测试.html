@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试</title>
+    <link rel="stylesheet" href="./css/page.css">
+</head>
+<body>
+    <div class="cubs"></div>
+    <script src="./tool/jquery-3.3.1.js"></script>
+    <script src="./tool/page.js"></script>
+    <script>
+        $('.cubs').page({
+            // 总数据
+            allPageSize : 300,
+            // 每一页数量
+            pageSize : 15,
+            // 当前页码
+            nowPage : 17,
+            // 回调函数
+            changePageCb : function (obj) {
+                console.log(obj.pageSize, obj.nowPage);
+            }
+        })
+    </script>
+</body>
+</html>
